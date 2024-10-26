@@ -5,9 +5,17 @@ html {
   box-sizing: border-box;
 }
 
-.logo-sekolah {
-  width: 180px;
-  height: 105px;
+@font-face {
+  font-family: "superkids";
+  src: url(Super\ Kinds.ttf);
+}
+
+.logo {
+  font-family: "superkids";
+  font-size: 32px;
+  color: #eef2e2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 nav {
