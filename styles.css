@@ -11,11 +11,10 @@ html {
 }
 
 .logo {
-  font-family: "superkids";
-  font-size: 32px;
-  color: #eef2e2;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 105px;
+  height: 105px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 nav {
@@ -119,14 +118,14 @@ nav ul li a:hover {
   height: 36%;
   width: 100%;
   border-radius: 24px 24px 0 0;
-  background-color: #4070f4;
+  background-color: #0093ce;
 }
 .image {
   position: relative;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background-color: #4070f4;
+  background-color: #0093ce;
   padding: 3px;
   margin-bottom: 10px;
 }
@@ -145,6 +144,7 @@ nav ul li a:hover {
 }
 .text-data .name {
   font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   font-weight: 500;
   padding: 1px 0px 2px 0px;
 }
@@ -152,10 +152,12 @@ nav ul li a:hover {
 .text-data .job {
   font-size: 16px;
   font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-style: italic;
+  color: #0093ce;
   align-content: center;
   padding-top: 2px;
   padding-bottom: 2px;
-  border-bottom: 2px solid #4070f4;
   display: inline-block;
 }
 .text-data .jobdesk {
@@ -177,9 +179,8 @@ nav ul li a:hover {
 
 .title {
   font-size: 24px;
-  font-weight: bold;
+  font-family: "superkids";
   color: #0093ce;
-  border-bottom: 3px solid #0093ce;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -225,6 +226,11 @@ main > section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 42px;
-  padding: 20px 0px 15px 0px;
+  gap: 3rem;
+  padding: 20px 1rem 15px 1rem;
+}
+
+.Desain {
+  display: flex;
+  flex-direction: row;
 }
