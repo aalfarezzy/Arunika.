@@ -254,6 +254,13 @@ main > section {
   position: relative;
 }
 
+#section-2 {
+  background: url("produk.jpg") no-repeat center center/cover;
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
 #section-3 {
   background: url("Desain.jpg") no-repeat center center/cover;
   min-height: 80vh;
