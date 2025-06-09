@@ -216,7 +216,7 @@ nav ul li a:hover {
   padding-top: 4cm;
 }
 
-.title1 {
+.title {
   font-size: 24px;
   font-family: "superkids";
   color: #fff; /* bagian dalam putih */
@@ -225,14 +225,6 @@ nav ul li a:hover {
   text-shadow: -2px -2px 0 #0093ce, 2px -2px 0 #0093ce, -2px 2px 0 #0093ce,
     2px 2px 0 #0093ce, 0 2px 0 #0093ce, 2px 0 0 #0093ce, 0 -2px 0 #0093ce,
     -2px 0 0 #0093ce;
-}
-
-.title {
-  font-size: 24px;
-  font-family: "superkids";
-  color: #0093ce;
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .content {
