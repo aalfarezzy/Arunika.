@@ -10,9 +10,19 @@ html {
   src: url(Super\ Kinds.ttf);
 }
 
+.logo-text {
+  font-family: "superkids";
+  font-size: 28px;
+  font-weight: 800;
+  font-style: italic;
+  color: #eef2e2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .logo {
-  width: 105px;
-  height: 105px;
+  width: 95px;
+  height: 95px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -24,6 +34,12 @@ nav {
   align-items: center;
   text-align: center;
   padding: 1rem 2rem;
+}
+
+nav .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 nav ul {
@@ -80,34 +96,37 @@ nav ul li a:hover {
 }
 
 .scroll-container {
-  justify-content: center;
   display: flex;
-  align-items: center;
-  position: relative;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
 }
 
 .profile-card {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 185px;
-  width: 100%;
+  justify-content: flex-start;
+  width: 210px;
+  height: 355px; /* tinggi tetap agar semua kotak sama */
   background: #fff;
   border-radius: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  padding: 20px 16px 16px 16px;
+  margin: 0 auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: transform 500s ease-in-out;
-  transition: all;
-  transition-duration: 500ms;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .profile-card:hover {
-  transform: scale(1.12);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
 .profile-card::before {
@@ -119,16 +138,21 @@ nav ul li a:hover {
   width: 100%;
   border-radius: 24px 24px 0 0;
   background-color: #0093ce;
+  z-index: 0;
 }
+
 .image {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   background-color: #0093ce;
   padding: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  z-index: 1;
+  flex-shrink: 0;
 }
+
 .image .profile-img {
   height: 100%;
   width: 100%;
@@ -136,36 +160,51 @@ nav ul li a:hover {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+
 .profile-card .text-data {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333;
+  z-index: 1;
+  text-align: center;
+  flex: 1 1 auto; /* agar text-data mengisi ruang kosong */
+  justify-content: center;
 }
+
 .text-data .name {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-  font-weight: 500;
-  padding: 1px 0px 2px 0px;
+  font-weight: 600;
+  margin: 4px 0 2px 0;
 }
 
 .text-data .job {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   font-style: italic;
   color: #0093ce;
-  align-content: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  display: inline-block;
+  margin-bottom: 2px;
 }
+
 .text-data .jobdesk {
   font-size: 13px;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   font-weight: 400;
   text-align: center;
-  padding: 8px 7px 0px 5px;
+  margin-top: 8px;
+  padding: 0 4px;
+  flex-grow: 1;
+}
+
+/* Responsive: profile-card melebar di mobile */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90vw;
+    height: auto;
+    min-height: 280px;
+  }
 }
 
 .heading {
